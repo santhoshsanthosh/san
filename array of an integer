@@ -1,17 +1,13 @@
 # include <stdio.h>
-# define bool int
  
-void quickSort(int *, int, int);
- 
-bool hasArrayTwoCandidates(int A[], int arr_size, int sum)
+int main(int *, int, int);
+(int A[], int arr_size, int sum)
 {
     int l, r;
  
     /* Sort the elements */
     quickSort(A, 0, arr_size-1);
  
-    /* Now look for the two candidates in the sorted 
-       array*/
     l = 0;
     r = arr_size-1; 
     while (l < r)
